@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="com.ganyo:gcm-server:1.0.2" type="repository">
+    <properties maven-id="com.ganyo:gcm-server:1.0.2" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/ganyo/gcm-server/1.0.2/gcm-server-1.0.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
