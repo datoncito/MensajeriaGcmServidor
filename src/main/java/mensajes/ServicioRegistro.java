@@ -23,7 +23,7 @@ public class ServicioRegistro {
         mongoTemplate.insert(registro);
     }
 
-    public List<RegistroMensajeria> getTodos(String id){
+    public List<RegistroMensajeria> getTodos(){
         List<RegistroMensajeria> registros=new ArrayList<RegistroMensajeria>();
         registros=mongoTemplate.findAll(RegistroMensajeria.class);
         return registros;

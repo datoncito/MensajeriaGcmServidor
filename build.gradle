@@ -31,6 +31,10 @@ repositories {
     maven { url "https://repo.spring.io/snapshot" }
     maven { url "https://repo.spring.io/milestone" }
     maven {url "https://raw.githubusercontent.com/slorber/gcm-server-repository/master/releases/"}
+    //para smack
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots'
+    }
 }
 
 configurations {
@@ -44,6 +48,19 @@ dependencies {
     compile("com.fasterxml.jackson.datatype:jackson-datatype-joda:2.6.0-rc1")
     compile("com.google.android.gcm:gcm-server:1.0.2")
    // providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
+   //sigue smack para ccs
+    compile ("org.igniterealtime.smack:smack-java7:4.0.1")
+    // Optional for XMPPTCPConnection
+    compile ("org.igniterealtime.smack:smack-tcp:4.0.1")
+    // Optional for XMPP-IM (RFC 6121) support (Roster, Threaded Chats, …)
+    compile ("org.igniterealtime.smack:smack-im:4.1.0")
+    compile ("org.igniterealtime.smack:smack-core:4.0.1")
+    compile ("org.igniterealtime.smack:smack:3.2.1")
+    compile ("org.igniterealtime.smack:smack-resolver-javax:4.0.1")
+    // Optional for XMPP extensions support
+    compile ("org.igniterealtime.smack:smack-extensions:4.0.7")
+    compile ("org.igniterealtime.smack:smack-experimental:4.1.0")
+    compile ("com.googlecode.json-simple:json-simple:1.1")
     testCompile("org.springframework.boot:spring-boot-starter-test") 
 }
 

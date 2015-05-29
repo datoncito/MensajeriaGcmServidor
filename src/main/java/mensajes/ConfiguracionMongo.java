@@ -3,6 +3,7 @@ package mensajes;
 import com.mongodb.Mongo;
 import com.mongodb.MongoURI;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.config.AbstractMongoConfiguration;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.SimpleMongoDbFactory;
@@ -11,6 +12,7 @@ import org.springframework.data.mongodb.gridfs.GridFsTemplate;
 /**
  * Created by campitos on 5/26/15.
  */
+@Configuration
 public class ConfiguracionMongo extends AbstractMongoConfiguration{
 
     @Bean
