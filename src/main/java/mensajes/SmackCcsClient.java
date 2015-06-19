@@ -308,7 +308,7 @@ public class SmackCcsClient {
         String messageId = ccsClient.nextMessageId();
         Map<String, String> payload = new HashMap<String, String>();
         payload.put("title", "Campitoos");
-        payload.put("message", "Pinche menso");
+        payload.put("message", "Pinche retrasadito mental");
         payload.put("EmbeddedMessageId", messageId);
         String collapseKey = "sample";
         Long timeToLive = 10000L;
